@@ -1,0 +1,324 @@
+/*Mobile and Global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-image: url(backgrounds/teds-monstera-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+main {
+    margin-top: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
+    
+}
+
+nav a img{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    padding: 5%;
+    top: 0;
+    background-color: #eeeeee;
+}
+
+nav a:hover {
+    color: #e3e935;
+    background-color: darkgray;
+}
+
+nav a {
+    font-size: 1.5em;
+    font-weight:600;
+    text-decoration: none;
+    color: #000000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#hello {
+    margin: 0 0.5rem;
+    animation: bounceInLeft;
+    animation-duration: 5s;
+    font-size: 5em;
+    font-weight: 800;
+    color: #e3e935;
+}
+
+#hello.welcome {
+    font-size: 2em;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15%;
+}
+
+#images img {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+}
+
+#images img.a {
+    animation: bounceInDown;
+    animation-duration: 5s;
+}
+
+#images img.b {
+    animation: bounceInUp;
+    animation-duration: 5s; 
+}
+
+#images img.c {
+    animation: bounceInRight;
+    animation-duration: 5s; 
+}
+
+#images img.a:hover, #images img.b:hover, #images img.c:hover {
+    box-shadow: 10px 10px 5px #e3e935;
+}
+
+#text {
+    margin-top: 5%;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#text p{
+    margin-top: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    width: 80%;
+}
+
+#text p a{
+    color: #046a38;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#text p a:hover{
+    color: #e3e935;
+}
+
+footer {
+    margin-top: 5%;
+    background-color: #eeeeee;
+    padding: 75px;
+}
+
+h4{
+    font-size: 1.3em;
+    color: #046a38;
+}
+
+footer ul{
+    list-style: none;
+    line-height: 1.5em;
+    font-size: 0.8em;
+    padding-bottom: 20px;
+}
+
+img.cook{
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+
+/*Destop Style*/
+
+@media only screen and (min-width: 481px)
+{
+
+main {
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+nav a img{
+    display: inline;
+    justify-content: flex-end;
+
+}
+
+nav {
+    background-color: transparent;
+    width: 99%;
+    position: fixed;
+    top: 0;
+    padding: 0%;
+    text-align: right;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+nav a {
+    font-size: 1.5em;
+    font-weight:500;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    text-align: right;
+}
+    
+nav a:hover {
+    color: #e3e935;
+    background-color: transparent;
+}
+
+.top {
+    margin-top: 5%;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+#hello {
+    margin: 0 0.5rem;
+    font-size: 9em;
+    font-weight: 800;
+    color: #e3e935;
+}
+
+#hello.welcome {
+    font-size: 2.8em;
+    color: black;
+    font-weight: 600;
+}
+    
+span.a {
+     display: inline-block;
+}
+    
+#images img {
+    position: absolute;
+}
+
+#images img.a {
+    top: 125px;
+    right: 20px;
+    width: 40%;
+}
+
+#images img.b {
+    top: 300px;
+    left: 31%;
+    width: 18%;  
+}
+
+#images img.c {
+    top: 250px;
+    left: 0px;
+    width: 24%;  
+}
+
+#images img.a:hover, #images img.b:hover, #images img.c:hover {
+    box-shadow: 20px 20px 5px #e3e935;
+}
+    
+#text p a.first:hover:after{
+    content: url(teds_image4.jpg);
+    display: block;
+    width: 100px; 
+    position: absolute;
+    top: -500px;
+    right: 600px;
+    transform: scale(.15);
+}
+
+#text p a.second:hover:after{
+    content: url(teds_image5.jpg);
+    display: block;
+    width: 100px; 
+    position: absolute;
+    top: -200px;
+    right: 500px;
+    transform: scale(.2);
+}
+
+#text {
+    margin-top: 30%;
+    position: relative;
+}
+
+#text p{
+    margin-top: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    width: 80%;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin-top: 4%;
+    margin-left: 0%
+}
+
+#text p{
+    margin-top: 1em;
+    margin-left: 20px;
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 55%;
+}
+    
+footer {
+    margin-top: 5%;
+    padding: 75px;
+    position: relative;
+    width: 100%;
+}
+
+h4{
+    font-size: 1.3em;
+}
+    
+footer ul{
+    display: inline;
+    line-height: 1.6em;
+    font-size: 0.9em;
+    padding-bottom: 20px;
+}
+
+span b{
+    display: inline-block;
+    flex-direction: row;
+}
+
+img.cook{
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    bottom: 55px;
+}
+      
+}
